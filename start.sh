@@ -7,7 +7,7 @@ deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe 
 " > /etc/apt/sources.list
 apt-get update
 apt-get upgrade -y
-apt-get install -y python vim openssh-server openjdk-8-jdk rsync wget tar 
+apt-get install -y python vim openssh-server openjdk-8-jdk rsync wget tar pdsh
 echo 'JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"' >> /etc/environment
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 source /etc/environment
@@ -23,3 +23,6 @@ mv ./hadoop-3.0.0/ ./hadoop
 chown -R hadoop ./hadoop
 cd /usr/local/hadoop
 ./bin/hadoop version
+echo "PDSH_RCMD_TYPE=ssh" >> /home/hadoop/.bashrc
+source /home/hadoop/.bashrc
+export PDSH_RCMD_TYPE=ssh
