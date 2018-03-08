@@ -17,7 +17,7 @@ Ubuntu16.04 64位
 
 若最后出现如图所示表示 hadoop 安装成功
 
-接着就可以用 ssh 登陆你的 hadoop 用户
+接着就可以用 ssh 登陆你的 hadoop 用户(初始密码为 hadoop)
 
 ##### `hadoop`安装路径
 `/usr/local/hadoop`
