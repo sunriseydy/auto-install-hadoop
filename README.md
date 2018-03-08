@@ -19,5 +19,13 @@ Ubuntu16.04 64位
 
 接着就可以用 ssh 登陆你的 hadoop 用户
 
+##### `hadoop`安装路径
+`/usr/local/hadoop`
+
+##### `hadoop` 运行命令
+`bash /usr/local/hadoop/bin/hadoop xxxxxxxxxxxxx`
+##### `java` 安装路径
+`/usr/lib/jvm/java-8-openjdk-amd64`
+
 ### 已知 Bug
 在shell脚本中虽然已经设置了 Java 的环境变量，但当时并没有生效，需要重新登陆才行
