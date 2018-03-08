@@ -5,9 +5,13 @@ Auto install hadoop
 Ubuntu16.04 64位
 
 ### 使用方法
+
+登陆Ubuntu后在终端中输入以下命令：
 `wget -O start.sh https://dl.sunriseydy.top/start.sh && sudo bash start.sh`
 
+
 输入你登陆的用户名密码即可。
+等待脚本运行结束。期间需要联网！需要联网！需要联网！（需要下载 JDK 和 hadoop）
 
 ![](https://github.com/sunriseydy/auto-install-hadoop/raw/master/screenshot_1.png)
 
