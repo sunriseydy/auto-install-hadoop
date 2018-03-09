@@ -23,9 +23,20 @@ Ubuntu16.04 64位
 `/usr/local/hadoop`
 
 ##### `hadoop` 运行命令
-`bash /usr/local/hadoop/bin/hadoop xxxxxxxxxxxxx`
+`/usr/local/hadoop/bin/hadoop xxxxxxxxxxxxx`
 ##### `java` 安装路径
 `/usr/lib/jvm/java-8-openjdk-amd64`
+
+### 相关教程
+##### hadoop 3.0.0 官方文档
+[ Apache Hadoop 3.0.0 : Setting up a Single Node Cluster.](http://hadoop.apache.org/docs/r3.0.0/hadoop-project-dist/hadoop-common/SingleCluster.html " Apache Hadoop 3.0.0 : Setting up a Single Node Cluster.")
+
+##### 安装 JDK 教程
+[在Linux[Ubuntu CentOS]上安装配置JDK](https://blog.sunriseydy.top/technology/server-blog/server/linux-ubuntu-centos-install-jdk/ "在Linux[Ubuntu CentOS]上安装配置JDK")
+
+##### Ubuntu 开启 SSH 证书登陆教程
+[Ubuntu配置ssh并实现Putty密钥登陆、禁止密码登陆、更改ssh端口](https://blog.sunriseydy.top/technology/server-blog/server/ubuntupeizhisshbingshixianputtymiyaodenglujinzhimimadenglugenggaisshduankou/ "Ubuntu配置ssh并实现Putty密钥登陆、禁止密码登陆、更改ssh端口")
+
 
 ### 已知 Bug
 在shell脚本中虽然已经设置了 Java 的环境变量，但当时并没有生效，需要重新登陆才行
