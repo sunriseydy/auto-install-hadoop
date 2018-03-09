@@ -7,11 +7,11 @@ deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe 
 " > /etc/apt/sources.list
 apt-get update
 apt-get upgrade -y
-apt-get install -y python vim openssh-server openjdk-8-jdk rsync wget tar pdsh
+apt-get install -y vim openssh-server openjdk-8-jdk wget tar pdsh
 echo 'JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"' >> /etc/environment
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 source /etc/environment
-echo "创建 hadoop 用户，密码默认为 hadoop"
+echo "create hadoop user，the password is hadoop"
 useradd -m hadoop -s /bin/bash
 echo hadoop:hadoop|chpasswd
 adduser hadoop sudo
@@ -26,8 +26,6 @@ cd /usr/local/hadoop
 echo "export PDSH_RCMD_TYPE=ssh" >> /home/hadoop/.bashrc
 source /home/hadoop/.bashrc
 export PDSH_RCMD_TYPE=ssh
-echo "please input the user hadoop's password(is hadoop by default)"
-su hadoop
-ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
-cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-chmod 0600 ~/.ssh/authorized_keys
+sudo -u hadoop ssh-keygen -t rsa -P '' -f /home/hadoop/.ssh/id_rsa
+sudo -u hadoop cat /home/hadoop/.ssh/id_rsa.pub >> /home/hadoop/.ssh/authorized_keys
+sudo -u hadoop chmod 0600 /home/hadoop/.ssh/authorized_keys
