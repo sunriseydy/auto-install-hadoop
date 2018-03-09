@@ -23,6 +23,11 @@ mv ./hadoop-3.0.0/ ./hadoop
 chown -R hadoop ./hadoop
 cd /usr/local/hadoop
 ./bin/hadoop version
-echo "PDSH_RCMD_TYPE=ssh" >> /home/hadoop/.bashrc
+echo "export PDSH_RCMD_TYPE=ssh" >> /home/hadoop/.bashrc
 source /home/hadoop/.bashrc
 export PDSH_RCMD_TYPE=ssh
+echo "please input the user hadoop's password(is hadoop by default)"
+su hadoop
+ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 0600 ~/.ssh/authorized_keys
