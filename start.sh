@@ -29,5 +29,6 @@ source /home/hadoop/.bashrc
 export PDSH_RCMD_TYPE=ssh
 hadoop version
 sudo -u hadoop ssh-keygen -t rsa -P '' -f /home/hadoop/.ssh/id_rsa
+sudo -u hadoop touch /home/hadoop/.ssh/authorized_keys
 sudo -u hadoop cat /home/hadoop/.ssh/id_rsa.pub >> /home/hadoop/.ssh/authorized_keys
 sudo -u hadoop chmod 0600 /home/hadoop/.ssh/authorized_keys
