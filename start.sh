@@ -16,7 +16,7 @@ useradd -m hadoop -s /bin/bash
 echo hadoop:hadoop|chpasswd
 adduser hadoop sudo
 adduser hadoop root
-wget http://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-3.0.0/hadoop-3.0.0.tar.gz
+wget -O hadoop-3.0.0.tar.gz http://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/common/hadoop-3.0.0/hadoop-3.0.0.tar.gz
 tar -zxf hadoop-3.0.0.tar.gz -C /usr/local
 cd /usr/local/
 mv ./hadoop-3.0.0/ ./hadoop
