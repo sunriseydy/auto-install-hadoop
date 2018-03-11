@@ -11,7 +11,7 @@ apt-get install -y vim openssh-server openjdk-8-jdk wget tar pdsh
 echo 'JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"' >> /etc/environment
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 source /etc/environment
-echo "create hadoop user，the password is hadoop"
+echo "create hadoop user,the password is hadoop"
 useradd -m hadoop -s /bin/bash
 echo hadoop:hadoop|chpasswd
 adduser hadoop sudo
@@ -20,7 +20,7 @@ wget -O hadoop-3.0.0.tar.gz http://mirrors.tuna.tsinghua.edu.cn/apache/hadoop/co
 tar -zxf hadoop-3.0.0.tar.gz -C /usr/local
 cd /usr/local/
 mv ./hadoop-3.0.0/ ./hadoop
-chown -R hadoop ./hadoop
+chown -R hadoop:hadoop ./hadoop
 cd /usr/local/hadoop
 export PATH=$PATH:/usr/local/hadoop/bin
 echo "export PATH=$PATH:/usr/local/hadoop/bin" >> /home/hadoop/.bashrc
