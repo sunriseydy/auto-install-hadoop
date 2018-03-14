@@ -23,7 +23,11 @@ mv ./hadoop-3.0.0/ ./hadoop
 chown -R hadoop:hadoop ./hadoop
 cd /usr/local/hadoop
 export PATH=$PATH:/usr/local/hadoop/bin
+export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
+export HADOOP_HOME=/usr/local/hadoop
 echo "export PATH=$PATH:/usr/local/hadoop/bin" >> /home/hadoop/.bashrc
+echo "HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar" >> /home/hadoop/.bashrc
+echo "export HADOOP_HOME=/usr/local/hadoop" >> /home/hadoop/.bashrc
 echo "export PDSH_RCMD_TYPE=ssh" >> /home/hadoop/.bashrc
 source /home/hadoop/.bashrc
 export PDSH_RCMD_TYPE=ssh
