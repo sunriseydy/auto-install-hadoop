@@ -1,6 +1,8 @@
 # auto-install-hadoop
 Auto install hadoop
 
+Ubuntu 一键安装 Hadoop
+
 ### 系统需求
 Ubuntu16.04 64位
 
@@ -9,6 +11,11 @@ Ubuntu16.04 64位
 登陆Ubuntu后在终端中输入以下命令：
 `wget -O start.sh https://dl.sunriseydy.top/start.sh && sudo bash start.sh`
 
+#### 新增安装 Hadoop 2.7.5 版本
+
+登陆Ubuntu后在终端中输入以下命令：
+
+`wget -O start-2.7.5.sh https://dl.sunriseydy.top/start-2.7.5.sh && sudo bash start-2.7.5.sh`
 
 输入你登陆的用户名密码即可。
 等待脚本运行结束。期间需要联网！需要联网！需要联网！（需要下载 JDK 和 hadoop）
@@ -30,6 +37,8 @@ Ubuntu16.04 64位
 ### 相关教程
 ##### hadoop 3.0.0 官方文档
 [ Apache Hadoop 3.0.0 : Setting up a Single Node Cluster.](http://hadoop.apache.org/docs/r3.0.0/hadoop-project-dist/hadoop-common/SingleCluster.html " Apache Hadoop 3.0.0 : Setting up a Single Node Cluster.")
+##### Hadoop 2.7.5 官方文档
+[Apache Hadoop 2.7.5](http://hadoop.apache.org/docs/r2.7.5/ "Apache Hadoop 2.7.5")
 
 ##### 安装 JDK 教程
 [在Linux[Ubuntu CentOS]上安装配置JDK](https://blog.sunriseydy.top/technology/server-blog/server/linux-ubuntu-centos-install-jdk/ "在Linux[Ubuntu CentOS]上安装配置JDK")
