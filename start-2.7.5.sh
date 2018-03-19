@@ -7,7 +7,7 @@ deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe 
 " > /etc/apt/sources.list
 apt-get update
 apt-get upgrade -y
-apt-get install -y vim openssh-server openjdk-8-jdk wget tar pdsh
+apt-get install -y vim openssh-server openjdk-8-jdk wget tar pdsh rsync
 echo 'JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"' >> /etc/environment
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 source /etc/environment
