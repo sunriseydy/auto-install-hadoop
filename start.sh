@@ -27,10 +27,10 @@ export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 export HADOOP_HOME=/usr/local/hadoop
 export PATH=${JAVA_HOME}/bin:${PATH}
 export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
-echo "export PATH=$PATH:/usr/local/hadoop/bin" >> /home/hadoop/.bashrc
+echo "PATH=$PATH:/usr/local/hadoop/bin" >> /home/hadoop/.bashrc
 echo "HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar" >> /home/hadoop/.bashrc
-echo "export HADOOP_HOME=/usr/local/hadoop" >> /home/hadoop/.bashrc
-echo "export PDSH_RCMD_TYPE=ssh" >> /home/hadoop/.bashrc
+echo "HADOOP_HOME=/usr/local/hadoop" >> /home/hadoop/.bashrc
+echo "PDSH_RCMD_TYPE=ssh" >> /home/hadoop/.bashrc
 source /home/hadoop/.bashrc
 export PDSH_RCMD_TYPE=ssh
 hadoop version
