@@ -40,6 +40,12 @@ Ubuntu16.04 64位
 ##### Hadoop 2.7.5 官方文档
 [Apache Hadoop 2.7.5](http://hadoop.apache.org/docs/r2.7.5/ "Apache Hadoop 2.7.5")
 
+##### Ubuntu16.04 安装配置 Hadoop3.0.0 —— 单机模式和伪集群模式
+[Ubuntu16.04 安装配置 Hadoop3.0.0 —— 单机模式和伪集群模式](https://blog.sunriseydy.top/technology/server-blog/server/ubuntu16-04-install-hadoop3-0-0-with-a-single-node/ "Ubuntu16.04 安装配置 Hadoop3.0.0 —— 单机模式和伪集群模式")
+
+##### Ubuntu16.04 安装配置 Hadoop3.0.0 —— 集群模式
+[Ubuntu16.04 安装配置 Hadoop3.0.0 —— 集群模式](https://blog.sunriseydy.top/technology/server-blog/server/ubuntu16-04-install-hadoop3-0-0-with-cluster-setup/ "Ubuntu16.04 安装配置 Hadoop3.0.0 —— 集群模式")
+
 ##### 安装 JDK 教程
 [在Linux[Ubuntu CentOS]上安装配置JDK](https://blog.sunriseydy.top/technology/server-blog/server/linux-ubuntu-centos-install-jdk/ "在Linux[Ubuntu CentOS]上安装配置JDK")
 
