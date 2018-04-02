@@ -31,7 +31,6 @@ export PATH=$PATH:/usr/local/hadoop/bin:/usr/local/hadoop/sbin
 export HADOOP_HOME=/usr/local/hadoop
 export HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$CLASSPATH:`$HADOOP_HOME/bin/hadoop classpath`
 export PATH=${JAVA_HOME}/bin:${PATH}
-export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 echo "PATH=$PATH:/usr/local/hadoop/bin" >> /home/hadoop/.bashrc
 echo "HADOOP_HOME=/usr/local/hadoop" >> /home/hadoop/.bashrc
 echo 'export HADOOP_CLASSPATH=$HADOOP_CLASSPATH:$CLASSPATH:`$HADOOP_HOME/bin/hadoop classpath`' >> /home/hadoop/.bashrc
